@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>FOODY</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div id="page1">
+      <div id="nav">
+        <h1>FOODY</h1>
+        <div id="search">
+          <input type="text" />
+          <button>Search</button>
+        </div>
+      </div>
+      <div id="page1content">
+        <div id="content1">
+          <h1>A Chef In Every Tasty Meal Box</h1>
+          <button>Select Program</button>
+          <button>View Menu</button>
+        </div>
+        <img src="chef.png" alt="" />
+      </div>
+    </div>
+    <div id="page2">
+      <div id="pg2img">
+        <img src="pizza.png" alt="" />
+        <img src="burger.png" alt="" />
+        <img src="taco.png" alt="" />
+      </div>
+      <h1>Pizza burger taco and <span>much more</span></h1>
+    </div>
+    <div id="page3">
+      <div id="part1">
+        <img src="delivery.png" alt="" />
+        <h1>We <span>Offer</span> The <span>Fastest</span> Delivery</h1>
+      </div>
+      <div id="part2">
+        <h1>To <span>Feed</span> Your <span>Hunger</span></h1>
+        <img src="eat.png" alt="" />
+      </div>
+      <button id="order" onclick="Top()">Order Now</button>
+    </div>
+    <script>
+      function Top() {
+          window.scrollTo(0, 0);
+      }
+  </script>
+  </body>
+</html>

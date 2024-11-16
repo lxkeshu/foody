@@ -1,0 +1,232 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Super Sedan;
+}
+html , body{
+    height: 100%;
+    width: 100%;
+}
+#page1{
+    height: 100vh;
+    width: 100%;
+    background: red;
+    color: white;
+}
+#page1content{
+    height: 100vh;
+    width: 100%;
+    display: flex;
+}
+#nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2vw;
+}
+#search button{
+    margin-right: 2vw;
+    margin-left: 1vw;
+    padding: 0.3vw 1vw;
+    border-radius: 5px;
+    transition: 0.5s all ease;
+}
+#search button:hover{
+    background: #999;
+}
+#search input{
+    width: 10vw;
+    padding: 0.3vw;
+    border-radius: 6px;
+}
+#content1{
+    height: 80%;
+    width: 50%;
+}
+#content1 h1{
+    font-size: 6vw;
+    position: relative;
+    top: 15%;
+    left: 10%;
+    color: white;
+}
+#content1 button{
+    border: none;
+    font-size: 1vw;
+    padding: 1vw;
+    border-radius: 2vw;
+    position: relative;
+    top: 20%;
+    left: 10%;
+    background-color: black;
+    color: white;
+    transition: 0.5s all ease;
+}
+#content1 button:hover{
+    background: white;
+    color: black;
+}
+#page1content img{
+    height: 90vh;
+    opacity: 90%;
+}
+#page2{
+    height: 100vh;
+    width: 100%;
+    background-color: #000;
+}
+#pg2img{
+    height: 40vh;
+    width: 100%;
+}
+#pg2img img{
+    width: 30%;
+    margin: 10vh 1vw;
+}
+#page2 h1{
+    font-size: 10vw;
+    font-family: Super Sedan;
+    color: white;
+    padding: 2vw;
+}
+#page2 h1 span{
+    font-size: 6vw;
+    font-family: Super Sedan;
+    color: red;
+}
+#page3{
+    height: 250vh;
+    width: 100%;
+    background: red;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+#part1{
+    padding-top: 10vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5vw;
+}
+#part2{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5vw;
+}
+#page3 img{
+    height: 100vh;
+}
+#page3 h1{
+    font-size: 7.5vw;
+    margin: 1vw;
+}
+#page3 h1 span{
+    color: white;
+}
+#page3 button{
+    padding: 1vw 5vw;
+    font-size: 2rem;
+    border: none;
+    background: #000;
+    color: #fff;
+
+}
+#page3 button:hover{
+    background: #fff;
+    color: #000;
+    transition: 0.5s all ease;
+}
+
+@media only screen and (max-width: 600px){
+    #nav{
+        display: flex;
+        flex-direction: column;
+        gap: 1vh;
+    }
+    #search button{
+        margin-right: 5vw;
+        height: 4vh;
+        padding: 0 2vw;
+        width: 20vw;
+    } 
+    #search input{
+        width: 65vw;
+        height: 4vh;
+    }
+    #content1 h1{
+        width: 90vw;
+        font-size: 10vw;
+    }
+    #content1 button{
+        padding: 5vw;
+        font-size: 4vw;
+        margin: 1vw;
+        z-index: 2;
+    }
+    #page1 img{
+        height: 50vh;
+        object-fit: cover;
+        position: absolute;
+        top: 50%;
+        z-index: 1;
+    }
+    #pg2img{
+        height: 30vh;
+        display: flex;
+        flex-direction: column;
+        gap: 1vh;
+    }
+    #page2 h1{
+        font-size: 15vw;
+    }
+    #page2 h1 span{
+        font-size: 30vw;
+    }
+    #page2 img:nth-child(even){
+        width: 100vw;
+    }
+    #page2 img:nth-child(odd){
+        display: none;
+    }
+    #page3{
+        display: flex;
+        flex-direction: column;
+        gap: 15vh;
+        background-color: black;
+    }
+    #part1{
+        width: 100vw;
+        height: 100vh;
+        display: flex;
+        flex-direction: column;
+        margin-top: 0;
+        background: #000;
+    }
+    #part2{
+        width: 100vw;
+        height: 100vh;
+        display: flex;
+        flex-direction: column;
+        background: #000;
+    }
+    #page3 img{
+        height: 60vh;
+        overflow: hidden;
+        width: 100vw;
+        object-fit: contain;
+    }
+    #page3 h1{
+        font-size: 14vw;
+        color: red;
+    }
+    #page3 button{
+        background: #fff;
+        color: red;
+        border-radius: 1vw;
+        padding: 2vh 10vw;
+    }
+}
