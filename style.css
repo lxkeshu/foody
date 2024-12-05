@@ -1,8 +1,12 @@
+@font-face {
+    font-family: 'SuperFont';
+    src: url('SuperSedan-YzmXv.ttf') format('truetype'); /* Path to your TTF file */
+}
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: Super Sedan;
+    font-family: SuperFont;
 }
 html , body{
     height: 100%;
@@ -86,13 +90,11 @@ html , body{
 }
 #page2 h1{
     font-size: 10vw;
-    font-family: Super Sedan;
     color: white;
     padding: 2vw;
 }
 #page2 h1 span{
     font-size: 6vw;
-    font-family: Super Sedan;
     color: red;
 }
 #page3{
