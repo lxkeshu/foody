@@ -86,7 +86,7 @@ html , body{
 }
 #pg2img img{
     width: 30%;
-    margin: 10vh 1vw;
+    margin: 10vh 0;
 }
 #page2 h1{
     font-size: 10vw;
@@ -144,6 +144,12 @@ html , body{
 }
 
 @media only screen and (max-width: 600px){
+    body{
+        margin: 0;
+        padding: 0;
+        width: 100vw;
+        max-width: 100%;
+    }
     #nav{
         display: flex;
         flex-direction: column;
@@ -170,7 +176,7 @@ html , body{
         z-index: 2;
     }
     #page1 img{
-        height: 50vh;
+        height: 40vh;
         object-fit: cover;
         position: absolute;
         top: 50%;
